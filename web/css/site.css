@@ -10,6 +10,14 @@ body {
     padding: 0 0 60px;
 }
 
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
 .wrap > .container {
     padding: 70px 15px 20px;
 }
