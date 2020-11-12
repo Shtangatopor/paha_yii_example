@@ -64,7 +64,6 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
-
     /**
      * Displays contact page.
      *
@@ -72,15 +71,7 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
+        return $this->render('contact');
     }
 
     /**
