@@ -8,16 +8,15 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
-$this->title = 'Contact';
+$this->title = 'Как нас найти';
 
 ?>
 <div class="site-contact">
 
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur at delectus dolor esse expedita fugit
-        iure maxime minus nemo nesciunt, officia placeat possimus quibusdam quod repellendus sapiente. Distinctio, velit.</h1>
+    <h1>Все сюда!</h1>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8c93333ffd39160f904ccf9b0fa841243d4475625b08504b2406bcb64f8b9d1a&amp;source=constructor" width="711" height="508" frameborder="0"></iframe>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem consectetur consequatur deleniti, eius error
-        id in nam odit officiis pariatur quasi quos unde? Dolore exercitationem mollitia numquam possimus quas.</p>
+    <p>Заходим внутрь и тусим!</p>
 
 
 </div>
