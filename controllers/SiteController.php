@@ -69,9 +69,9 @@ class SiteController extends Controller
      *
      * @return Response|string
      */
-    public function actionContact()
+    public function actionFoto()
     {
-        return $this->render('contact');
+        return $this->render('foto');
     }
 
     /**
@@ -79,8 +79,8 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAbout()
+    public function actionContact()
     {
-        return $this->render('about');
+        return $this->render('contact');
     }
 }

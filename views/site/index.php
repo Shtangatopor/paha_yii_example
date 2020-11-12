@@ -2,52 +2,45 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Haron';
 ?>
 <div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
+    <h1 align="center">Видосики</h1>
+    <?php $items = [
+        [
+            'title' => 'Sintel',
+            'href' => 'http://media.w3.org/2010/05/sintel/trailer.mp4',
+            'type' => 'video/mp4',
+            'poster' => 'http://media.w3.org/2010/05/sintel/poster.png'
+        ],
+        [
+            'title' => 'Big Buck Bunny',
+            'href' => 'http://upload.wikimedia.org/wikipedia/commons/7/75/Big_Buck_Bunny_Trailer_400p.ogg',
+            'type' => 'video/ogg',
+            'poster' => 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Big.Buck.Bunny.-.Opening.Screen.png/' .
+                '800px-Big.Buck.Bunny.-.Opening.Screen.png'
+        ],
+        [
+            'title' => 'Elephants Dream',
+            'href' => 'http://upload.wikimedia.org/wikipedia/commons/transcoded/8/83/Elephants_Dream_%28high_quality%29.ogv/' .
+                'Elephants_Dream_%28high_quality%29.ogv.360p.webm',
+            'type' => 'video/webm',
+            'poster' => 'http://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Elephants_Dream_s1_proog.jpg/' .
+                '800px-Elephants_Dream_s1_proog.jpg'
+        ]
+    ]; ?>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+    <?= dosamigos\gallery\Carousel::widget([
+        'items' => $items, 'json' => true,
+        'templateOptions' => ['id' => 'gallery_1'],
+        'clientOptions' => ['container' => '#gallery_1'],
+        'options' => ['id' => 'gallery_1'],
+    ]); ?>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
 
-    <div class="body-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem consectetur consequatur deleniti, eius error
+        id in nam odit officiis pariatur quasi quos unde? Dolore exercitationem mollitia numquam possimus quas.</p>
 
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
 </div>
